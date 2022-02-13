@@ -87,6 +87,8 @@ function pko_setup() {
 			'flex-height' => true,
 		)
 	);
+			
+
 }
 add_action( 'after_setup_theme', 'pko_setup' );
 
@@ -150,6 +152,6 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Block-editor additions.
+ * Block-editor.
  */
 require get_template_directory() . '/inc/block-editor.php';
