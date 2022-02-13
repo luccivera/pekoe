@@ -23,8 +23,6 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'pko' ); ?></a>
-
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<?php
@@ -50,7 +48,7 @@
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'main-menu',
+					'theme_location' => 'menu-primary',
 					'menu_id'        => 'primary-menu',
 				)
 			);
