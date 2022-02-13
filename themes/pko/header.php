@@ -50,7 +50,7 @@
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'main-menu',
+					'theme_location' => 'menu-primary',
 					'menu_id'        => 'primary-menu',
 				)
 			);
