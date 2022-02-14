@@ -135,10 +135,10 @@ function pko_scripts() {
 		get_stylesheet_uri(), 
 		array(),
 		PKO_VERSION );
-	// wp_enqueue_style( 
-	// 	'foundation-style', 
-	// 	get_template_directory_uri() . '/assets/css/vendor/foundation.min.css', 
-	// 	'6.7.4');
+
+	wp_enqueue_style( 
+		'pko-style-css', 
+		get_template_directory_uri() . '/assets/css/app.css');
 
 	// wp_enqueue_script( 
 	// 	'what-input-script', 

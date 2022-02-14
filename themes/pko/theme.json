@@ -37,6 +37,11 @@
           "slug": "happy-pink"
         },
         {
+          "color": "#ff8888",
+          "name": "deep-pink",
+          "slug": "deep-pink"
+        },
+        {
           "color": "#ffffff",
           "name": "white",
           "slug": "white"
@@ -46,11 +51,37 @@
           "name": "black",
           "slug": "black"
         }
-      ]
+      ],
+      "link": true
+    },
+    "border": {
+      "color": true,
+      "style": true
     },
     "layout": {
       "contentSize": "1000px",
       "wideSize": "1200px"
+    },
+    "typography": {
+      "fontSizes": [
+        { "slug": "extra-small", "name": "extra-small", "size": "14px" },
+        { "slug": "small", "name": "small", "size": "16px" },
+        { "slug": "normal", "name": "normal", "size": "20px" },
+        { "slug": "large", "name": "large", "size": "36px" },
+        { "slug": "extra-large", "name": "extra-large", "size": "60px" }
+      ],
+      "fontFamilies": [
+        {
+          "fontFamily": "museo-sans",
+          "name": "museo-sans",
+          "slug": "museo-sans"
+        },
+        {
+          "fontFamily": "quicksand",
+          "name": "quicksand",
+          "slug": "quicksand"
+        }
+      ]
     }
   }
 }
