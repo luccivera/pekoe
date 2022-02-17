@@ -53,6 +53,7 @@ function pko_setup() {
 		)
 	);
 
+
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
@@ -136,9 +137,13 @@ function pko_scripts() {
 		array(),
 		PKO_VERSION );
 
-	wp_enqueue_style( 
-		'pko-style-css', 
-		get_template_directory_uri() . '/assets/css/app.css');
+		wp_enqueue_style( 
+			'typekit', 'https://use.typekit.net/jrk3viq.css', false );
+
+		wp_enqueue_style( 
+			'pko-style-css', 
+				get_template_directory_uri() . '/assets/css/app.css');
+
 
 	// wp_enqueue_script( 
 	// 	'what-input-script', 
@@ -160,6 +165,21 @@ function pko_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'pko_scripts' );
+
+if (! function_exists('fa_custom_setup_kit') ) {
+	function fa_custom_setup_kit($kit_url = '') {
+	  foreach ( [ 'wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts' ] as $action ) {
+		add_action(
+		  $action,
+		  function () use ( $kit_url ) {
+			wp_enqueue_script( 'font-awesome-kit', $kit_url, [], null );
+		  }
+		);
+	  }
+	}
+  }
+  fa_custom_setup_kit('https://kit.fontawesome.com/A0D25EDE-5E6E-434E-AFE9-05A687CE3EDC');
+  
 
 /**
  * Custom template tags for this theme.

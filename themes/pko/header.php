@@ -17,6 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/jrk3viq.css">
+	<link rel="stylesheet" href="/css/font-awesome/css/all.css">
 	<?php wp_head(); ?>
 </head>
 

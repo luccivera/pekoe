@@ -6,6 +6,13 @@
   color: tomato;
 }
 
+/* .wp-block-button.is-style-outline {
+  border: 1px solid orange;
+} */
+
+/* .is-style-outline > :where(.wp-block-button__link) {
+  border: 2px solid orange;
+} */
 h2 {
   font-family: "Quicksand";
 }
