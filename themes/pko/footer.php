@@ -54,6 +54,7 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js" integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau" crossorigin="anonymous"></script>
 
 </body>
 </html>
