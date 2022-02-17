@@ -128,13 +128,19 @@ table {
   border-spacing: 0;
 }
 
+/* Header Stylings */
 .site-title {
   display: none;
 }
 
 .header-container {
-  display: flex;
+  display: grid;
   padding: 1.875rem 5rem;
+  grid-template-areas: "logo nav nav-icons";
+  grid-template-columns: auto 1fr 1fr;
+
+  font-family: "quicksand";
+  padding: 0.8rem 5rem;
 }
 hr {
   border-top: 1px solid #ffbcbd;
@@ -143,10 +149,9 @@ hr {
 } */
 
 .main-navigation {
-  align-items: center;
-  align-content: center;
+  grid-area: nav;
   align-self: center;
-  padding-left: 3rem;
+  text-align: center;
 }
 
 li {
@@ -203,7 +208,7 @@ ul li {
   grid-template-columns: 3fr 1fr 1fr;
   background-color: #f8edeb;
   font-family: "quicksand";
-  padding: 0.8rem 7.5rem;
+  padding: 0.8rem 5rem;
 }
 
 .pko-bottom-footer h3,
@@ -218,6 +223,13 @@ p {
 .pko-footer-social-icons {
   grid-area: social-icons;
   padding-bottom: 0.8rem;
+}
+.fa-twitter,
+.fa-instagram,
+.fa-pinterest-p,
+.fa-facebook-f {
+  color: #626262;
+  margin-right: 0.8rem;
 }
 
 .pko-footer-subscribe {

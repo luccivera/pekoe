@@ -54,14 +54,6 @@
       ],
       "link": true
     },
-    "border": {
-      "color": true,
-      "style": true
-    },
-    "layout": {
-      "contentSize": "1000px",
-      "wideSize": "1200px"
-    },
     "typography": {
       "fontSizes": [
         { "slug": "extra-small", "name": "extra-small", "size": "14px" },
@@ -72,7 +64,7 @@
       ],
       "fontFamilies": [
         {
-          "fontFamily": "museo-sans",
+          "fontFamily": "/'museo-sans'/",
           "name": "museo-sans",
           "slug": "museo-sans"
         },
@@ -82,6 +74,14 @@
           "slug": "quicksand"
         }
       ]
+    },
+    "border": {
+      "color": true,
+      "style": true
+    },
+    "layout": {
+      "contentSize": "1000px",
+      "wideSize": "1200px"
     }
   }
 }
