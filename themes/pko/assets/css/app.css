@@ -174,3 +174,80 @@ li a:hover {
 ul li {
   display: inline-block;
 }
+
+.pko-button {
+  background-color: #fff;
+  border: 2px solid #000;
+  height: 2.5rem;
+  width: 16rem;
+}
+
+/* Footer stlying */
+.pko-footer {
+  bottom: 0;
+}
+
+.pko-quiz-footer {
+  background-color: #fad6c6;
+  height: 8.75rem;
+  color: #000;
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.pko-bottom-footer {
+  display: grid;
+  grid-template-areas:
+    "second-nav . social-icons"
+    "second-nav . subscribe-form";
+  grid-template-columns: 3fr 1fr 1fr;
+  background-color: #f8edeb;
+  font-family: "quicksand";
+  padding: 0.8rem 7.5rem;
+}
+
+.pko-bottom-footer h3,
+p {
+  padding-bottom: 0.313rem;
+}
+
+.pko-footer-nav {
+  grid-area: second-nav;
+}
+
+.pko-footer-social-icons {
+  grid-area: social-icons;
+  padding-bottom: 0.8rem;
+}
+
+.pko-footer-subscribe {
+  grid-area: subscribe-form;
+  max-width: 350px;
+}
+
+.pko-footer-subscribe h3 {
+  font-size: 24px;
+  padding: 0.8rem 0;
+}
+
+.pko-footer-subscribe p {
+  font-size: 16px;
+  padding: 0.8rem 0;
+}
+
+#pko-form-box {
+  background-color: #fff;
+  border: 2px solid #ffc4c4;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.313rem;
+  margin-bottom: 0.8rem;
+}
+
+.pko-footer-button {
+  background-color: #fff;
+  border: 2px solid #000;
+  height: 2.5rem;
+  width: 100%;
+}
