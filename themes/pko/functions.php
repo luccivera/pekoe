@@ -53,6 +53,7 @@ function pko_setup() {
 		)
 	);
 
+
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
@@ -136,9 +137,12 @@ function pko_scripts() {
 		array(),
 		PKO_VERSION );
 
-	wp_enqueue_style( 
-		'pko-style-css', 
-		get_template_directory_uri() . '/assets/css/app.css');
+		wp_enqueue_style( 
+			'typekit', 'https://use.typekit.net/jrk3viq.css', false );
+
+		wp_enqueue_style( 
+			'pko-style-css', 
+				get_template_directory_uri() . '/assets/css/app.css');
 
 	// wp_enqueue_script( 
 	// 	'what-input-script', 

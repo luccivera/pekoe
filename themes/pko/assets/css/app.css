@@ -131,3 +131,46 @@ table {
 .site-title {
   display: none;
 }
+
+.header-container {
+  display: flex;
+  padding: 1.875rem 5rem;
+}
+hr {
+  border-top: 1px solid #ffbcbd;
+}
+/* .site-branding {
+} */
+
+.main-navigation {
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  padding-left: 3rem;
+}
+
+li {
+  padding-right: 2.25rem;
+}
+
+li a {
+  color: black;
+  font-family: "Quicksand";
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: black;
+  border-bottom: 1px solid #f9a631;
+}
+
+ul li {
+  display: inline-block;
+}
