@@ -57,6 +57,11 @@
 				);
 				?>
 			</nav>
+
+			<div class="pko-nav-icons">
+				<i class="fa-regular fa-user fa-xl"></i>
+				<i class="fa-solid fa-cart-shopping fa-xl"></i>
+			</div>
 			</section>
 			<hr>
 			

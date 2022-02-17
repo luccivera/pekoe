@@ -180,7 +180,53 @@ if (! function_exists('fa_custom_setup_kit') ) {
   }
   fa_custom_setup_kit('https://kit.fontawesome.com/A0D25EDE-5E6E-434E-AFE9-05A687CE3EDC');
   
-
+/**
+ * Font Awesome CDN Setup SVG
+ * 
+ * This will load Font Awesome 6 from the Font Awesome Free CDN.
+ */
+if (! function_exists('fa_custom_setup_cdn_svg') ) {
+	function fa_custom_setup_cdn_svg($cdn_url = '', $integrity = null) {
+	  $matches = [];
+	  $match_result = preg_match('|/([^/]+?)\.js$|', $cdn_url, $matches);
+	  $resource_handle_uniqueness = ($match_result === 1) ? $matches[1] : md5($cdn_url);
+	  $resource_handle = "font-awesome-cdn-svg-$resource_handle_uniqueness";
+  
+	  foreach ( [ 'wp_enqueue_scripts', 'admin_enqueue_scripts', 'login_enqueue_scripts' ] as $action ) {
+		add_action(
+		  $action,
+		  function () use ( $cdn_url, $resource_handle ) {
+			wp_enqueue_script( $resource_handle, $cdn_url, [], null );
+		  }
+		);
+	  }
+  
+	  if($integrity) {
+		add_filter(
+		  'script_loader_tag',
+		  function( $html, $handle ) use ( $resource_handle, $integrity ) {
+			if ( in_array( $handle, [ $resource_handle ], true ) ) {
+			  return preg_replace(
+				'/^<script /',
+				'<script integrity="' . $integrity .
+				'" defer crossorigin="anonymous"',
+				$html,
+				1
+			  );
+			} else {
+			  return $html;
+			}
+		  },
+		  10,
+		  2
+		);
+	  }
+	}
+  }
+  fa_custom_setup_cdn_svg(
+	'https://use.fontawesome.com/releases/v6.0.0/js/all.js',
+	'sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau'
+  );
 /**
  * Custom template tags for this theme.
  */
