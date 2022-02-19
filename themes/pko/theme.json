@@ -7,39 +7,29 @@
       "defaultPalette": false,
       "palette": [
         {
-          "color": "#cfdec9",
-          "name": "pastel-green",
-          "slug": "pastel-green"
+          "color": "#8c7b64",
+          "name": "mud-brown",
+          "slug": "muddy brown"
         },
         {
-          "color": "#f8edeb",
-          "name": "soft-pink",
-          "slug": "soft-pink"
+          "color": "#d9a78b",
+          "name": "taupe",
+          "slug": "taupe"
         },
         {
-          "color": "#f8e9c3",
-          "name": "soft-orange",
-          "slug": "soft-orange"
+          "color": "#554f53",
+          "name": "charcoal-brown",
+          "slug": "charcoal-brown"
         },
         {
-          "color": "#fad6c6",
-          "name": "salmon",
-          "slug": "salmon"
+          "color": "#f2dcd8",
+          "name": "pastel-pink",
+          "slug": "pastel-pink"
         },
         {
-          "color": "#f9a631",
-          "name": "tangerine",
-          "slug": "tangerine"
-        },
-        {
-          "color": "#ffc4c4",
-          "name": "happy-pink",
-          "slug": "happy-pink"
-        },
-        {
-          "color": "#ff8888",
-          "name": "deep-pink",
-          "slug": "deep-pink"
+          "color": "#bf847e",
+          "name": "dusty-rose",
+          "slug": "dusty-rose"
         },
         {
           "color": "#ffffff",

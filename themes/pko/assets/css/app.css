@@ -142,7 +142,7 @@ table {
   padding: 0.8rem 5rem;
 }
 hr {
-  border-top: 1px solid #ffbcbd;
+  border-top: 1px solid var(--wp--preset--color--dusty-rose);
 }
 /* .site-branding {
 } */
@@ -178,7 +178,7 @@ li a:visited {
 
 li a:hover {
   color: black;
-  border-bottom: 1px solid #f9a631;
+  border-bottom: 1px solid var(--wp--preset--color--dusty-rose);
 }
 
 ul li {
@@ -198,9 +198,9 @@ ul li {
 }
 
 .pko-quiz-footer {
-  background-color: #fad6c6;
+  background-color: var(--wp--preset--color--pastel-pink);
   height: 6.75rem;
-  color: #000;
+  color: white;
   font-family: "quicksand";
   align-self: center;
   text-align: center;
@@ -217,7 +217,7 @@ ul li {
     "second-nav . social-icons"
     "second-nav . subscribe-form";
   grid-template-columns: 3fr 1fr 1fr;
-  background-color: #f8edeb;
+  background-color: var(--wp--preset--color--charcoal-brown);
   font-family: "quicksand";
   padding: 0.8rem 5rem;
 }
@@ -240,7 +240,7 @@ p {
 .fa-instagram,
 .fa-pinterest-p,
 .fa-facebook-f {
-  color: #626262;
+  color: var(--wp--preset--color--pastel-pink);
   margin-right: 0.8rem;
 }
 
@@ -269,8 +269,8 @@ p {
 }
 
 #pko-form-box {
-  background-color: #fff;
-  border: 2px solid #ffc4c4;
+  background-color: var(--wp--preset--color--pastel-pink);
+  border: 2px solid var(--wp--preset--color--taupe);
   font-family: "quicksand";
   height: 2.5rem;
   width: 100%;

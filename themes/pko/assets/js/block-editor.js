@@ -13,9 +13,9 @@ wp.blocks.registerBlockStyle("core/button", {
   name: "pko-button",
   label: "Pko Button",
 });
-wp.blocks.registerBlockStyle("core/buttons", {
-  name: "pko-buttons",
-  label: "Pko Buttons",
+wp.blocks.registerBlockStyle("core/button", {
+  name: "pko-button-alt",
+  label: "Pko Buttons Alt",
 });
 wp.blocks.registerBlockStyle("core/calendar", {
   name: "pko-calendar",
@@ -49,10 +49,7 @@ wp.blocks.registerBlockStyle("core/comment-date", {
   name: "pko-comment-date",
   label: "Pko Comment Date",
 });
-wp.blocks.registerBlockStyle("core/comment-edit-link", {
-  name: "pko-comment-edit-link",
-  label: "Pko Comment Edit Link",
-});
+
 wp.blocks.registerBlockStyle("core/comment-template", {
   name: "pko-comment-template",
   label: "Pko Comment Template",
@@ -73,36 +70,7 @@ wp.blocks.registerBlockStyle("core/comments-previous", {
   name: "pko-comment-previous",
   label: "Pko Comment previous",
 });
-wp.blocks.registerBlockStyle("core/comment-template", {
-  name: "pko-comments-template",
-  label: "Pko Comments Template",
-});
 
-wp.blocks.registerBlockStyle("core/comment-template", {
-  name: "pko-comment-template",
-  label: "Pko Comment Template",
-});
-wp.blocks.registerBlockStyle("core/comment-template", {
-  name: "pko-comment-template",
-  label: "Pko Comment Template",
-});
-wp.blocks.registerBlockStyle("core/comment-template", {
-  name: "pko-comment-template",
-  label: "Pko Comment Template",
-});
-wp.blocks.registerBlockStyle("core/comment-template", {
-  name: "pko-comment-template",
-  label: "Pko Comment Template",
-});
-wp.blocks.registerBlockStyle("core/code", {
-  name: "pko-code",
-  label: "Pko Code",
-});
-
-wp.blocks.registerBlockStyle("core/code", {
-  name: "pko-code",
-  label: "Pko Code",
-});
 wp.blocks.registerBlockStyle("core/cover", {
   name: "pko-cover",
   label: "Pko Cover",
