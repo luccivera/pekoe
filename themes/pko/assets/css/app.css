@@ -175,7 +175,17 @@ p {
 }
 
 /* Margin Styling */
-
-.entry-header {
+.entry-meta {
   display: none;
+}
+
+.post .entry-title {
+  font-size: 50px;
+  font-family: "quicksand";
+  color: var(--wp--preset--color--dusty-rose);
+  padding: 1rem 5rem;
+}
+
+.post .taxonomy-category {
+  padding: 1rem 5rem;
 }

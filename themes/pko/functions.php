@@ -228,6 +228,17 @@ if (! function_exists('fa_custom_setup_cdn_svg') ) {
 	'https://use.fontawesome.com/releases/v6.0.0/js/all.js',
 	'sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau'
   );
+
+
+  // Enable Gutenberg in WooCommerce
+function activate_gutenberg_product( $can_edit, $post_type ) {
+
+    if ( $post_type == 'product' ) {
+        $can_edit = true;
+    }
+    return $can_edit;
+}
+add_filter( 'use_block_editor_for_post_type', 'activate_gutenberg_product', 10, 2 );
 /**
  * Custom template tags for this theme.
  */

@@ -1,5 +1,10 @@
 console.log("Block Editor");
 
+wp.blocks.registerBlockType("pko-media-text", {
+  name: "pko-media-text",
+  label: "Pko Media Text Header",
+});
+
 wp.blocks.registerBlockStyle("core/archives", {
   name: "pko-archives",
   label: "Pko Archives",
@@ -83,6 +88,10 @@ wp.blocks.registerBlockStyle("core/gallery", {
   name: "pko-gallery",
   label: "Pko Gallery",
 });
+wp.blocks.registerBlockStyle("core/group", {
+  name: "pko-group",
+  label: "Pko Group",
+});
 wp.blocks.registerBlockStyle("core/heading", {
   name: "pko-heading",
   label: "Pko Heading",
@@ -136,9 +145,44 @@ wp.blocks.registerBlockStyle("core/preformatted", {
   name: "pko-preformatted",
   label: "Pko Preformatted",
 });
+wp.blocks.registerBlockStyle("core/post-content", {
+  name: "pko-post-content",
+  label: "Pko Post Content",
+});
+
+wp.blocks.registerBlockStyle("core/post-excerpt", {
+  name: "pko-post-excerpt",
+  label: "Pko Post Excerpt",
+});
+wp.blocks.registerBlockStyle("core/post-featured-image", {
+  name: "pko-featured-image",
+  label: "Pko Featured Image",
+});
+
+wp.blocks.registerBlockStyle("core/post-navigation-link", {
+  name: "pko-navigation-link",
+  label: "Pko Nav Link",
+});
+
+wp.blocks.registerBlockStyle("core/post-template", {
+  name: "pko-post-template",
+  label: "Pko Post Template",
+});
+wp.blocks.registerBlockStyle("core/post-title", {
+  name: "pko-post-title",
+  label: "Pko Post Title",
+});
+wp.blocks.registerBlockStyle("core/post-tags", {
+  name: "pko-post-tags",
+  label: "Pko Post Tags",
+});
 wp.blocks.registerBlockStyle("core/pullquote", {
   name: "pko-pullquote",
   label: "Pko Pullquote",
+});
+wp.blocks.registerBlockStyle("core/query", {
+  name: "pko-query",
+  label: "Pko Query",
 });
 wp.blocks.registerBlockStyle("core/quote", {
   name: "pko-quote",
