@@ -78,27 +78,24 @@ ul li {
 
 .pko-quiz-footer {
   background-color: var(--wp--preset--color--pastel-pink);
-  height: 6.75rem;
-  color: white;
+  height: 8rem;
+  color: var(--wp--preset--color--black);
   font-family: "quicksand";
   align-self: center;
   text-align: center;
-  padding-top: 2rem;
-}
-.pko-quiz-footer p {
-  margin-bottom: 0.8rem;
+  padding: 1.5rem 0;
 }
 
 .pko-bottom-footer {
   display: grid;
   grid-template-areas:
-    "quiz quiz quiz"
     "second-nav . social-icons"
     "second-nav . subscribe-form";
   grid-template-columns: 3fr 1fr 1fr;
   background-color: var(--wp--preset--color--charcoal-brown);
+  color: #fff;
   font-family: "quicksand";
-  padding: 0.8rem 5rem;
+  padding: 2rem 5rem;
 }
 
 .pko-bottom-footer h3,
@@ -110,10 +107,26 @@ p {
   grid-area: second-nav;
 }
 
+.pko-footer-nav > h2 {
+  font-size: 20px;
+}
+
+.pko-footer-nav li a {
+  color: white;
+  text-transform: capitalize;
+}
+.pko-footer-nav ul li {
+  display: block;
+  padding-bottom: 0.625rem;
+}
 .pko-footer-social-icons {
   grid-area: social-icons;
-
   padding-bottom: 0.8rem;
+}
+
+.pko-footer-social-icons i {
+  color: white;
+  background-color: white;
 }
 .fa-twitter,
 .fa-instagram,
@@ -130,17 +143,13 @@ p {
 
 .pko-footer-subscribe h3 {
   font-size: 22px;
-  padding: 0.8rem 0;
 }
 
 .pko-footer-subscribe p {
   font-size: 16px;
   padding: 0.8rem 0;
 }
-.fa-twitter,
-.fa-instagram,
-.fa-pinterest-p,
-.fa-facebook-f,
+
 .fa-user,
 .fa-cart-shopping {
   color: #404040;
@@ -148,7 +157,7 @@ p {
 }
 
 #pko-form-box {
-  background-color: var(--wp--preset--color--pastel-pink);
+  background-color: var(--wp--preset--color--white);
   border: 2px solid var(--wp--preset--color--taupe);
   font-family: "quicksand";
   height: 2.5rem;
@@ -159,8 +168,14 @@ p {
 }
 
 .pko-footer-button {
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: var(--wp--preset--color--pastel-pink);
+  border: 2px solid var(--wp--preset--color--dusty-rose);
   height: 2.5rem;
   width: 100%;
+}
+
+/* Margin Styling */
+
+.entry-header {
+  display: none;
 }

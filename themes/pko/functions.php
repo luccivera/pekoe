@@ -50,6 +50,7 @@ function pko_setup() {
 	register_nav_menus(
 		array(
 			'menu-primary' => esc_html__( 'Primary', 'pko' ),
+			'footer-menu' => esc_html__( 'Footer Menu', 'pko' ),
 		)
 	);
 

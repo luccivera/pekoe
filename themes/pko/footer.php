@@ -20,12 +20,24 @@
 			<button class="pko-button">Perfect Tea Quiz</button>
 		</div>
 		<div class="pko-bottom-footer">
-			<div class="pko-footer-nav">links</div>
+			<div class="pko-footer-nav">
+
+	
+			<?php
+				wp_nav_menu(
+					array(
+						'menu_id'        => 'footer-menu',
+					)
+				);
+				?>
+
+
+			</div>
 			<div class="pko-footer-social-icons">	
-			<i class="fa-brands fa-twitter fa-xl"></i>
-			<i class="fa-brands fa-instagram fa-xl"></i>
-			<i class="fa-brands fa-pinterest-p fa-xl"></i>
-			<i class="fa-brands fa-facebook-f fa-xl"></i>
+			<i class="fa-brands fa-twitter fa-xl" style="color:#f2dcd8"></i>
+			<i class="fa-brands fa-instagram fa-xl" style="color:#f2dcd8"></i>
+			<i class="fa-brands fa-pinterest-p fa-xl" style="color:#f2dcd8"></i>
+			<i class="fa-brands fa-facebook-f fa-xl" style="color:#f2dcd8"></i>
 		</div>
 			<div class="pko-footer-subscribe">
 				<h3>Get all the latest tea</h3>
