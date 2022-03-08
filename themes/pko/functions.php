@@ -258,3 +258,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Block-editor.
  */
 require get_template_directory() . '/inc/block-editor.php';
+
+/**
+ * Custom Post Type
+ */
+require get_template_directory() . '/inc/post-type.php';

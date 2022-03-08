@@ -51,6 +51,12 @@ h2 {
 }
 .is-style-pko-categories {
   font-family: "quicksand";
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.is-style-pko-category-ind a {
+  text-decoration: none;
 }
 /* .is-style-pko-code {
   
@@ -136,6 +142,7 @@ h2 {
 .is-style-pko-query {
   font-family: "quicksand";
 }
+
 /* .is-style-pko-rss {
 } */
 /* 

@@ -33,10 +33,7 @@
 				if ( is_front_page() && is_home() ) :
 					?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php
-				else :
-					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				
 					<?php
 				endif;
 				$pko_description = get_bloginfo( 'description', 'display' );
@@ -59,8 +56,7 @@
 			</nav>
 
 			<div class="pko-nav-icons">
-				<i class="fa-regular fa-user fa-xl"></i>
-				<i class="fa-solid fa-cart-shopping fa-xl"></i>
+				
 			</div>
 			</section>
 			<hr>
