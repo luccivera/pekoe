@@ -2,7 +2,7 @@
 /*Template Name: Teas*/
 get_header();
 query_posts(array(
-   'post_type' => 'teas'
+   'post_type' => 'tea'
 )); ?>
 <?php
 while (have_posts()) : the_post(); ?>
