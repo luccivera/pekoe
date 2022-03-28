@@ -10,6 +10,10 @@ return array(
 		'version' => 'dev-trunk',
 		'path'    => $baseDir . '/includes/multi-currency/Compatibility/WooCommerceProductAddOns.php'
 	),
+	'WCPay\\MultiCurrency\\Compatibility\\WooCommerceNameYourPrice' => array(
+		'version' => 'dev-trunk',
+		'path'    => $baseDir . '/includes/multi-currency/Compatibility/WooCommerceNameYourPrice.php'
+	),
 	'WCPay\\MultiCurrency\\Compatibility\\WooCommerceFedEx' => array(
 		'version' => 'dev-trunk',
 		'path'    => $baseDir . '/includes/multi-currency/Compatibility/WooCommerceFedEx.php'
@@ -871,7 +875,7 @@ return array(
 		'path'    => $vendorDir . '/automattic/jetpack-connection/src/class-tokens.php'
 	),
 	'Automattic\\Jetpack\\Redirect' => array(
-		'version' => '1.7.10.0',
+		'version' => '1.7.12.0',
 		'path'    => $vendorDir . '/automattic/jetpack-redirect/src/class-redirect.php'
 	),
 	'Automattic\\Jetpack\\Heartbeat' => array(
@@ -895,11 +899,11 @@ return array(
 		'path'    => $vendorDir . '/automattic/jetpack-tracking/src/class-tracking.php'
 	),
 	'Automattic\\Jetpack\\Assets' => array(
-		'version' => '1.17.5.0',
+		'version' => '1.17.6.0',
 		'path'    => $vendorDir . '/automattic/jetpack-assets/src/class-assets.php'
 	),
 	'Automattic\\Jetpack\\Assets\\Semver' => array(
-		'version' => '1.17.5.0',
+		'version' => '1.17.6.0',
 		'path'    => $vendorDir . '/automattic/jetpack-assets/src/class-semver.php'
 	),
 	'Automattic\\Jetpack\\A8c_Mc_Stats' => array(
@@ -907,20 +911,24 @@ return array(
 		'path'    => $vendorDir . '/automattic/jetpack-a8c-mc-stats/src/class-a8c-mc-stats.php'
 	),
 	'Automattic\\Jetpack\\Terms_Of_Service' => array(
-		'version' => '1.9.19.0',
+		'version' => '1.9.20.0',
 		'path'    => $vendorDir . '/automattic/jetpack-terms-of-service/src/class-terms-of-service.php'
 	),
 	'Automattic\\Jetpack\\Status\\Visitor' => array(
-		'version' => '1.10.0.0',
+		'version' => '1.12.0.0',
 		'path'    => $vendorDir . '/automattic/jetpack-status/src/class-visitor.php'
 	),
 	'Automattic\\Jetpack\\Status\\Host' => array(
-		'version' => '1.10.0.0',
+		'version' => '1.12.0.0',
 		'path'    => $vendorDir . '/automattic/jetpack-status/src/class-host.php'
 	),
 	'Automattic\\Jetpack\\Status' => array(
-		'version' => '1.10.0.0',
+		'version' => '1.12.0.0',
 		'path'    => $vendorDir . '/automattic/jetpack-status/src/class-status.php'
+	),
+	'Automattic\\Jetpack\\Status\\Cache' => array(
+		'version' => '1.12.0.0',
+		'path'    => $vendorDir . '/automattic/jetpack-status/src/class-cache.php'
 	),
 	'Jetpack_Options' => array(
 		'version' => '1.14.2.0',
