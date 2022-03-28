@@ -268,25 +268,25 @@ require get_template_directory() . '/inc/post-type.php';
 /* Custom Post Type Start */
 
 
-function your_prefix_register_post_type() {
+function pko_teas_register_post_type() {
 	$args = [
-		'label'  => esc_html__( 'Teas', 'text-domain' ),
+		'label'  => esc_html__( 'Teas', 'pko' ),
 		'labels' => [
-			'menu_name'          => esc_html__( 'Teas', 'your-textdomain' ),
-			'name_admin_bar'     => esc_html__( 'Tea', 'your-textdomain' ),
-			'add_new'            => esc_html__( 'Add Tea', 'your-textdomain' ),
-			'add_new_item'       => esc_html__( 'Add new Tea', 'your-textdomain' ),
-			'new_item'           => esc_html__( 'New Tea', 'your-textdomain' ),
-			'edit_item'          => esc_html__( 'Edit Tea', 'your-textdomain' ),
-			'view_item'          => esc_html__( 'View Tea', 'your-textdomain' ),
-			'update_item'        => esc_html__( 'View Tea', 'your-textdomain' ),
-			'all_items'          => esc_html__( 'All Teas', 'your-textdomain' ),
-			'search_items'       => esc_html__( 'Search Teas', 'your-textdomain' ),
-			'parent_item_colon'  => esc_html__( 'Parent Tea', 'your-textdomain' ),
-			'not_found'          => esc_html__( 'No Teas found', 'your-textdomain' ),
-			'not_found_in_trash' => esc_html__( 'No Teas found in Trash', 'your-textdomain' ),
-			'name'               => esc_html__( 'Teas', 'your-textdomain' ),
-			'singular_name'      => esc_html__( 'Tea', 'your-textdomain' ),
+			'menu_name'          => esc_html__( 'Teas', 'pko' ),
+			'name_admin_bar'     => esc_html__( 'Tea', 'pko' ),
+			'add_new'            => esc_html__( 'Add Tea', 'pko' ),
+			'add_new_item'       => esc_html__( 'Add new Tea', 'pko' ),
+			'new_item'           => esc_html__( 'New Tea', 'pko' ),
+			'edit_item'          => esc_html__( 'Edit Tea', 'pko' ),
+			'view_item'          => esc_html__( 'View Tea', 'pko' ),
+			'update_item'        => esc_html__( 'View Tea', 'pko' ),
+			'all_items'          => esc_html__( 'All Teas', 'pko' ),
+			'search_items'       => esc_html__( 'Search Teas', 'pko' ),
+			'parent_item_colon'  => esc_html__( 'Parent Tea', 'pko' ),
+			'not_found'          => esc_html__( 'No Teas found', 'pko' ),
+			'not_found_in_trash' => esc_html__( 'No Teas found in Trash', 'pko' ),
+			'name'               => esc_html__( 'Teas', 'pko' ),
+			'singular_name'      => esc_html__( 'Tea', 'pko' ),
 		],
 		'public'              => true,
 		'exclude_from_search' => false,
@@ -316,5 +316,5 @@ function your_prefix_register_post_type() {
 
 	register_post_type( 'tea', $args );
 }
-add_action( 'init', 'your_prefix_register_post_type' );
+add_action( 'init', 'pko_teas_register_post_type' );
 	/* Custom Post Type End */
