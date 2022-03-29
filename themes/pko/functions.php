@@ -46,6 +46,10 @@ function pko_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
+	// Custom Image Size
+	add_image_size( 'pko-image-size', 800, 640 );
+
+
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
