@@ -91,14 +91,16 @@ ul li {
   column-gap: 20px;
   min-height: 12rem;
   padding: 1.5rem;
+  justify-content: center;
 }
 
 .pko-query-footer-info {
   display: flex;
-  background-color: #d9a78b;
+  border: 1px solid #d9a78b;
   flex-direction: column;
   padding-bottom: 1rem;
   max-width: 300px;
+  font-family: "quicksand";
 }
 
 .pko-query-footer-info .button-style {
@@ -106,9 +108,15 @@ ul li {
   text-align: start;
 }
 
-.pko-query-footer-info p,
-h2 {
-  padding: 0.8rem;
+.pko-query-footer-info p {
+  font-family: "quicksand";
+  padding: 0 0.8rem;
+}
+.pko-query-footer-info h2 {
+  padding: 0 0.8rem;
+  font-family: "quicksand";
+  font-size: 20px;
+  color: var(--wp--preset--color--charcoal-brown);
 }
 
 .pko-quiz-footer {
@@ -205,6 +213,20 @@ p {
   width: 100%;
 }
 
+/* Tea Template Styling */
+.tea-post-temp-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tea-post-content {
+  background-color: var(--wp--preset--color--pastel-pink);
+  gap: 20px;
+  margin: 1.5rem;
+  padding: 10px;
+  max-width: 300px;
+  font-family: "quicksand";
+}
+
 /* Margin Styling */
 .entry-meta {
   display: none;
@@ -222,6 +244,27 @@ p {
 }
 
 /* Woo Commerce Styling */
+
+/* WC Home page shop content */
+.wc-block-grid__products {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  background-clip: padding-box;
+  gap: 10px;
+}
+
+.wc-block-grid__product {
+  border: 1px solid #d9a78b;
+}
+.wc-block-grid__product-title {
+  text-transform: capitalize;
+  padding: 0.8rem 1.5rem;
+  font-family: "quicksand";
+  font-size: 20px;
+  color: var(--wp--preset--color--charcoal-brown);
+}
 
 .entry-content > *:not(.wp-block-media-text, .wp-block-cover) {
   max-width: 1200px;

@@ -244,6 +244,11 @@ function activate_gutenberg_product( $can_edit, $post_type ) {
 }
 add_filter( 'use_block_editor_for_post_type', 'activate_gutenberg_product', 10, 2 );
 
+//  Shorten Excerpt length
+add_filter( 'excerpt_length', function($length) {
+    return 20;
+}, PHP_INT_MAX );
+
 /**
  * Custom template tags for this theme.
  */
@@ -270,7 +275,6 @@ require get_template_directory() . '/inc/block-editor.php';
 require get_template_directory() . '/inc/post-type.php';
 
 /* Custom Post Type Start */
-
 
 function pko_teas_register_post_type() {
 	$args = [
