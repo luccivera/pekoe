@@ -84,11 +84,32 @@ ul li {
 .pko-footer {
   bottom: 0;
 }
-/* .pko-query-footer {
-  background-color: (--wp--preset--color--taupe);
-  height: 8rem;
-  padding: 1.5rem 0;
-} */
+.pko-query-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  column-gap: 20px;
+  min-height: 12rem;
+  padding: 1.5rem;
+}
+
+.pko-query-footer-info {
+  display: flex;
+  background-color: #d9a78b;
+  flex-direction: column;
+  padding-bottom: 1rem;
+  max-width: 300px;
+}
+
+.pko-query-footer-info .button-style {
+  background-color: transparent;
+  text-align: start;
+}
+
+.pko-query-footer-info p,
+h2 {
+  padding: 0.8rem;
+}
 
 .pko-quiz-footer {
   background-color: var(--wp--preset--color--pastel-pink);

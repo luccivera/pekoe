@@ -44,7 +44,7 @@
 					
 					', false);
 					the_excerpt();
-								echo "<button class='button-style'><a href='" . get_the_permalink() . "'>Learn more</button>";
+								echo "<button class='button-style'><a href='" . get_the_permalink() . "'>Read More</button>";
 								echo "</div>
 				";
 
